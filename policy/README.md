@@ -1,7 +1,5 @@
 # Policy
 
-1. Go to the [`/policy`](policy) folder
-
 1. Create a Policy Definition by running:
 
     ```sh

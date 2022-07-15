@@ -8,8 +8,6 @@
 
 ## Build Image
 
-1. Go to the [`/packer`](packer) folder
-
 1. Create a `dev.pkrvars.json` file inside the folder with the following variables:
 
     ```json

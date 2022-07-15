@@ -14,14 +14,13 @@ For this project, you will write a Packer template and a Terraform template to d
 4. Install [Terraform](https://www.terraform.io/downloads.html)
 
 ### Instructions
-#### Policy
-See [`/policy/README.md`](policy/README.md)
 
-#### Packer
-See [`/packer/README.md`](packer/README.md)
-
-#### Terraform
-See [`/terraform/README.md`](terraform/README.md)
+1. Follow [Policy instructions](policy/README.md)
+1. Follow [Packer instructions](packer/README.md)
+1. Follow [Terraform instructions](terraform/README.md)
 
 ### Output
-**Your words here**
+- Policy Definition and Policy Assignment are created on the Azure subscription
+- Packer image `c01-image` is created in the `packer-rg` Resource Group on Azure
+- Terraform plan is deployed in the `udacity-c01-rg` Resource Group on Azure
+- Server will be available on a public DNS and public IP address as described in the [Terraform instructions](terraform/README.md)

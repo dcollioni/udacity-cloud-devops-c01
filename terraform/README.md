@@ -2,8 +2,6 @@
 
 ## Apply Plan
 
-1. Go to the [`/terraform`](terraform) folder
-
 1. Initialise terraform module by running:
 
     ```sh
@@ -16,13 +14,23 @@
     terraform plan -out solution.plan
     ```
 
+    > This command will generate a `solution.plan` file inside the folder
+
+    By default the plan will deploy 1 VM instance behind the load balancer.
+
+    1. Optionally, you can increase the number of available instances by passing the `vm_count` variable to the plan command. For example, to create 3 VM instances, you can run:
+
+        ```sh
+        terraform plan -out solution.plan -var "vm_count=3"
+        ```
+
 1. Apply (deploy) the plan by running:
 
     ```sh
     terraform apply solution.plan
     ```
 
-    > This command will generate a `solution.plan` file inside the folder
+    > This command will deploy the plan into the `udacity-c01-rg` Resource Group on Azure
 
 1. Show the applied plan by running:
 
